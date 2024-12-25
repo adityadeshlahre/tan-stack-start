@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: tan-stack-start-dev:latest
+    container_name: tan-stack-start-dev
+    expose:
+      - 3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
