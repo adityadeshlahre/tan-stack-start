@@ -1,12 +1,10 @@
 FROM node:23-alpine AS base
 
-WORKDIR /dev
+WORKDIR /app
 
 RUN npm install --global nodemon vinxi
 
-COPY package.json ./
-
-COPY package-lock.json ./
+COPY package.json package-lock.json ./
 
 RUN npm install
 

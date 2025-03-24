@@ -2,9 +2,9 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "moduleResolution": "Bundler",
-    "target": "ES2022" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-    "module": "ESNext" /* Specify what module code is generated. */,
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "target": "ES2022",
+    "module": "ESNext",
+    "skipLibCheck": true,
     "strictNullChecks": true
   }
 }

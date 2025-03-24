@@ -3,9 +3,7 @@ import { createRouter as createTanStackRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 export function createRouter() {
-  const router = createTanStackRouter({
-    routeTree,
-  });
+  const router = createTanStackRouter({ routeTree, scrollRestoration: true });
 
   return router;
 }
