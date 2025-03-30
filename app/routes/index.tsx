@@ -1,13 +1,13 @@
 // app/routes/index.tsx
 import * as fs from "node:fs";
 import { createFileRoute, useRouter } from "@tanstack/react-router";
-import { createServerFn } from "@tanstack/start";
+import { createServerFn } from "@tanstack/react-start";
 
 const filePath = "count.txt";
 
 async function readCount() {
   return parseInt(
-    await fs.promises.readFile(filePath, "utf-8").catch(() => "0"),
+    await fs.promises.readFile(filePath, "utf-8").catch(() => "0")
   );
 }
 
